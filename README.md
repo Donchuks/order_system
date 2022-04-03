@@ -15,7 +15,7 @@ composer install
 
 - Migrate & Seed Database by running this:
 ```
-php artisan migrate:fresh --seed
+php artisan migrate --seed
 ```
 
 - Login:
