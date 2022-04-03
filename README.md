@@ -12,6 +12,15 @@ This application is a simple order management system CRAFTED by OKAFOR PONTIAN.
 composer install
 ```
 
+- Followed by:
+```
+cp .env.example .env
+```
+
+- Lastly:
+```
+php artisan key:generate
+```
 
 - Migrate & Seed Database by running this:
 ```
