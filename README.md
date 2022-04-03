@@ -18,7 +18,7 @@ composer install
 php artisan migrate --seed
 ```
 
-- Login:
+- Login:<br>
 	Username: chuksdeveloper@gmail.com <br>
 	Password: manager.chuksdev
 
