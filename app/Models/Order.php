@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Enum\OrderStatus;
 use App\Enum\RoleName;
+use App\Events\OrderCancelledEvent;
 use App\Events\OrderProcessingEvent;
 use App\Events\OrderReadyShipmentEvent;
 use App\Events\OrderReceivedEvent;
@@ -29,7 +30,7 @@ class Order extends Model
         'order_status:'.OrderStatus::ORDER_PROCESSING => OrderProcessingEvent::class,
         'order_status:'.OrderStatus::ORDER_READY_TO_SHIP => OrderReadyShipmentEvent::class,
         'order_status:'.OrderStatus::ORDER_SHIPPED => OrderShippedEvent::class,
-        'order_status:'.OrderStatus::ORDER_CANCELLED => OrderShippedEvent::class,
+        'order_status:'.OrderStatus::ORDER_CANCELLED => OrderCancelledEvent::class,
     ];
 
     protected $fillable = [
